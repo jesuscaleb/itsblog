@@ -1,0 +1,20 @@
+/*!
+Theme Name: itsblog
+Author: Jesus Caleb
+Description: Custom Wordpress Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: itsblog
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+*/
+
+
+@import "_partials/bootstrap/bootstrap";
+
+$black : rgb(0,0,0);
+
+*{
+    background-color: none;
+}
