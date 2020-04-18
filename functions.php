@@ -150,6 +150,10 @@ function itsblog_scripts() {
 	wp_deregister_script('jquery'); // deletes jquery file if already exists
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.1.1.min.js', array(), _S_VERSION, false );
 
+	wp_enqueue_script( 'classie', get_template_directory_uri() . '/js/classie.js', array(), _S_VERSION, false );
+
+	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.custom.js', array(), _S_VERSION, false );
+
 	wp_enqueue_script( 'bootstrapminjs', get_template_directory_uri() . '/js/bootstrap.min.js', array(), _S_VERSION, false );
 
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), _S_VERSION, false );
@@ -172,7 +176,7 @@ add_action( 'wp_enqueue_scripts', 'itsblog_scripts' );
  */
 function add_async_defer_attrs($tag, $handle) {
 	// add script handles to the array below
-	$scripts_to_add_attrs = array('jquery', 'bootstrapminjs', 'script', 'navigation', 'skip-link-focus-fix', 'comment-reply');
+	$scripts_to_add_attrs = array('jquery', 'classie', 'modernizr' , 'bootstrapminjs', 'script', 'navigation', 'skip-link-focus-fix', 'comment-reply');
 	
 	foreach($scripts_to_add_attrs as $attrd_script) {
 	   if ($attrd_script === $handle) {

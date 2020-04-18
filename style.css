@@ -13220,7 +13220,429 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-/* line 18, sass/style.scss */
-* {
-  background-color: none;
+/* line 1, sass/_partials/normalizr/normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace,serif;
+  font-size: 1em;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+button, select {
+  text-transform: none;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 1, sass/_partials/normalizr/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 32, sass/style.scss */
+*,
+*:after,
+*::before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 39, sass/style.scss */
+html,
+body,
+.st-container,
+.st-pusher,
+.st-content {
+  height: 100%;
+}
+
+/* line 47, sass/style.scss */
+.hamburguer {
+  position: fixed;
+}
+
+/* line 51, sass/style.scss */
+.st-content {
+  overflow-y: scroll;
+  background: #f3efe0;
+}
+
+/* line 56, sass/style.scss */
+.st-body {
+  min-height: 100%;
+  margin-top: 4%;
+  margin-bottom: -50px;
+  /* essential to stick footer*/
+}
+
+/* line 62, sass/style.scss */
+.st-container {
+  overflow: hidden;
+}
+
+/* line 66, sass/style.scss */
+.st-pusher {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+/* line 71, sass/style.scss */
+.st-pusher::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.2);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+/* line 84, sass/style.scss */
+.st-menu-open .st-pusher::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/* line 92, sass/style.scss */
+.st-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  visibility: hidden;
+  width: 300px;
+  height: 100%;
+  background: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* line 105, sass/style.scss */
+.st-menu::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  content: '';
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/* line 118, sass/style.scss */
+.st-menu-open .st-menu::after {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+/* content style */
+/* line 128, sass/style.scss */
+.st-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 134, sass/style.scss */
+.st-menu h2 {
+  margin: 0;
+  padding: 1em;
+  color: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 1px;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+/* line 143, sass/style.scss */
+.st-menu ul li a {
+  display: block;
+  padding: 1em 1em 1em 1.2em;
+  outline: none;
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+  color: #636363;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+  letter-spacing: 1px;
+  font-weight: 400;
+  -webkit-transition: background 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* line 157, sass/style.scss */
+.st-menu ul li:first-child a {
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2), inset 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 161, sass/style.scss */
+.st-menu ul li a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px transparent;
+  color: white;
+}
+
+/* Individual effects */
+/* Open door */
+/* line 171, sass/style.scss */
+.st-effect.st-container {
+  -webkit-perspective: 800px;
+  perspective: 800px;
+}
+
+/* line 176, sass/style.scss */
+.st-effect .st-pusher {
+  -webkit-transform-origin: 120%;
+  transform-origin: 120%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 183, sass/style.scss */
+.st-effect.st-menu-open .st-pusher {
+  -webkit-transform: rotateY(-20deg);
+  transform: rotateY(-20deg);
+}
+
+/* line 188, sass/style.scss */
+.st-effect.st-menu {
+  opacity: 1;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* line 194, sass/style.scss */
+.st-effect.st-menu-open .st-effect.st-menu {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 202, sass/style.scss */
+.st-effect.st-menu::after {
+  display: none;
+}
+
+/* line 205, sass/style.scss */
+.st-push {
+  margin-top: 5p0x;
+}
+
+/* line 208, sass/style.scss */
+.st-push, .st-footer {
+  height: 50px;
+}
+
+/* line 214, sass/style.scss */
+.st-footer {
+  background-color: black;
+  color: white;
+}
+
+/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+/* line 220, sass/style.scss */
+.no-csstransforms3d .st-pusher,
+.no-js .st-pusher {
+  padding-left: 300px;
 }
